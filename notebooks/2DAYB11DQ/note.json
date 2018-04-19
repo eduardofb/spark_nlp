@@ -1,0 +1,431 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sh\n\ncd data \u0026\u0026 wget https://github.com/daniel-acuna/python_data_science_intro/blob/master/data/imdb_reviews_preprocessed.parquet.zip?raw\u003dtrue -O imdb_reviews_preprocessed.parquet.zip \u0026\u0026 unzip imdb_reviews_preprocessed.parquet.zip \u0026\u0026 rm imdb_reviews_preprocessed.parquet.zip",
+      "user": "anonymous",
+      "dateUpdated": "Apr 18, 2018 5:06:01 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "--2018-04-18 17:06:01--  https://github.com/daniel-acuna/python_data_science_intro/blob/master/data/imdb_reviews_preprocessed.parquet.zip?raw\u003dtrue\nResolving github.com (github.com)... 192.30.253.113, 192.30.253.112\nConnecting to github.com (github.com)|192.30.253.113|:443... connected.\nHTTP request sent, awaiting response... 302 Found\nLocation: https://github.com/daniel-acuna/python_data_science_intro/raw/master/data/imdb_reviews_preprocessed.parquet.zip [following]\n--2018-04-18 17:06:02--  https://github.com/daniel-acuna/python_data_science_intro/raw/master/data/imdb_reviews_preprocessed.parquet.zip\nReusing existing connection to github.com:443.\nHTTP request sent, awaiting response... 302 Found\nLocation: https://raw.githubusercontent.com/daniel-acuna/python_data_science_intro/master/data/imdb_reviews_preprocessed.parquet.zip [following]\n--2018-04-18 17:06:02--  https://raw.githubusercontent.com/daniel-acuna/python_data_science_intro/master/data/imdb_reviews_preprocessed.parquet.zip\nResolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.92.133\nConnecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.92.133|:443... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 13717398 (13M) [application/zip]\nSaving to: ‘imdb_reviews_preprocessed.parquet.zip’\n\n     0K .......... .......... .......... .......... ..........  0%  188K 71s\n    50K .......... .......... .......... .......... ..........  0%  343K 55s\n   100K .......... .......... .......... .......... ..........  1%  157K 64s\n   150K .......... .......... .......... .......... ..........  1% 1.46M 50s\n   200K .......... .......... .......... .......... ..........  1%  787K 44s\n   250K .......... .......... .......... .......... ..........  2% 2.03M 37s\n   300K .......... .......... .......... .......... ..........  2% 5.16M 32s\n   350K .......... .......... .......... .......... ..........  2%  346K 33s\n   400K .......... .......... .......... .......... ..........  3% 1.51M 30s\n   450K .......... .......... .......... .......... ..........  3%  337K 31s\n   500K .......... .......... .......... .......... ..........  4% 2.63M 28s\n   550K .......... .......... .......... .......... ..........  4%  318K 29s\n   600K .......... .......... .......... .......... ..........  4% 13.5M 27s\n   650K .......... .......... .......... .......... ..........  5% 1.37M 25s\n   700K .......... .......... .......... .......... ..........  5%  214K 28s\n   750K .......... .......... .......... .......... ..........  5% 2.55M 26s\n   800K .......... .......... .......... .......... ..........  6%  293K 27s\n   850K .......... .......... .......... .......... ..........  6% 2.51M 26s\n   900K .......... .......... .......... .......... ..........  7% 3.35M 24s\n   950K .......... .......... .......... .......... ..........  7%  360K 25s\n  1000K .......... .......... .......... .......... ..........  7% 2.69M 24s\n  1050K .......... .......... .......... .......... ..........  8% 1.82M 23s\n  1100K .......... .......... .......... .......... ..........  8%  367K 23s\n  1150K .......... .......... .......... .......... ..........  8% 2.29M 22s\n  1200K .......... .......... .......... .......... ..........  9%  317K 23s\n  1250K .......... .......... .......... .......... ..........  9% 8.14M 22s\n  1300K .......... .......... .......... .......... .......... 10% 1.42M 21s\n  1350K .......... .......... .......... .......... .......... 10%  179K 23s\n  1400K .......... .......... .......... .......... .......... 10% 7.89M 22s\n  1450K .......... .......... .......... .......... .......... 11%  277K 23s\n  1500K .......... .......... .......... .......... .......... 11% 19.7M 22s\n  1550K .......... .......... .......... .......... .......... 11% 2.01M 21s\n  1600K .......... .......... .......... .......... .......... 12% 1.19M 21s\n  1650K .......... .......... .......... .......... .......... 12% 2.26M 20s\n  1700K .......... .......... .......... .......... .......... 13% 3.24M 20s\n  1750K .......... .......... .......... .......... .......... 13% 4.63M 19s\n  1800K .......... .......... .......... .......... .......... 13% 5.30M 19s\n  1850K .......... .......... .......... .......... .......... 14% 5.36M 18s\n  1900K .......... .......... .......... .......... .......... 14% 9.21M 18s\n  1950K .......... .......... .......... .......... .......... 14% 6.90M 17s\n  2000K .......... .......... .......... .......... .......... 15% 7.38M 17s\n  2050K .......... .......... .......... .......... .......... 15% 8.27M 16s\n  2100K .......... .......... .......... .......... .......... 16% 6.93M 16s\n  2150K .......... .......... .......... .......... .......... 16% 9.37M 15s\n  2200K .......... .......... .......... .......... .......... 16% 5.32M 15s\n  2250K .......... .......... .......... .......... .......... 17% 10.0M 15s\n  2300K .......... .......... .......... .......... .......... 17% 15.2M 14s\n  2350K .......... .......... .......... .......... .......... 17% 8.29M 14s\n  2400K .......... .......... .......... .......... .......... 18% 7.49M 14s\n  2450K .......... .......... .......... .......... .......... 18% 13.2M 13s\n  2500K .......... .......... .......... .......... .......... 19% 8.98M 13s\n  2550K .......... .......... .......... .......... .......... 19% 8.55M 13s\n  2600K .......... .......... .......... .......... .......... 19% 9.48M 13s\n  2650K .......... .......... .......... .......... .......... 20% 1.60M 12s\n  2700K .......... .......... .......... .......... .......... 20% 5.39M 12s\n  2750K .......... .......... .......... .......... .......... 20% 5.26M 12s\n  2800K .......... .......... .......... .......... .......... 21% 4.37M 12s\n  2850K .......... .......... .......... .......... .......... 21% 21.7M 11s\n  2900K .......... .......... .......... .......... .......... 22% 20.0M 11s\n  2950K .......... .......... .......... .......... .......... 22% 19.3M 11s\n  3000K .......... .......... .......... .......... .......... 22% 16.9M 11s\n  3050K .......... .......... .......... .......... .......... 23% 6.77M 11s\n  3100K .......... .......... .......... .......... .......... 23% 20.8M 10s\n  3150K .......... .......... .......... .......... .......... 23% 20.8M 10s\n  3200K .......... .......... .......... .......... .......... 24% 15.4M 10s\n  3250K .......... .......... .......... .......... .......... 24% 4.99M 10s\n  3300K .......... .......... .......... .......... .......... 25% 15.0M 10s\n  3350K .......... .......... .......... .......... .......... 25% 19.3M 9s\n  3400K .......... .......... .......... .......... .......... 25% 6.72M 9s\n  3450K .......... .......... .......... .......... .......... 26% 9.01M 9s\n  3500K .......... .......... .......... .......... .......... 26% 19.8M 9s\n  3550K .......... .......... .......... .......... .......... 26% 17.4M 9s\n  3600K .......... .......... .......... .......... .......... 27% 13.6M 9s\n  3650K .......... .......... .......... .......... .......... 27% 7.80M 8s\n  3700K .......... .......... .......... .......... .......... 27% 17.6M 8s\n  3750K .......... .......... .......... .......... .......... 28% 25.8M 8s\n  3800K .......... .......... .......... .......... .......... 28% 12.2M 8s\n  3850K .......... .......... .......... .......... .......... 29% 8.18M 8s\n  3900K .......... .......... .......... .......... .......... 29% 22.2M 8s\n  3950K .......... .......... .......... .......... .......... 29% 19.9M 8s\n  4000K .......... .......... .......... .......... .......... 30% 5.46M 7s\n  4050K .......... .......... .......... .......... .......... 30% 11.6M 7s\n  4100K .......... .......... .......... .......... .......... 30% 11.5M 7s\n  4150K .......... .......... .......... .......... .......... 31% 14.1M 7s\n  4200K .......... .......... .......... .......... .......... 31% 8.94M 7s\n  4250K .......... .......... .......... .......... .......... 32% 10.2M 7s\n  4300K .......... .......... .......... .......... .......... 32% 16.6M 7s\n  4350K .......... .......... .......... .......... .......... 32% 17.8M 7s\n  4400K .......... .......... .......... .......... .......... 33% 9.16M 7s\n  4450K .......... .......... .......... .......... .......... 33% 10.9M 6s\n  4500K .......... .......... .......... .......... .......... 33% 16.0M 6s\n  4550K .......... .......... .......... .......... .......... 34% 1.42M 6s\n  4600K .......... .......... .......... .......... .......... 34% 3.93M 6s\n  4650K .......... .......... .......... .......... .......... 35% 15.7M 6s\n  4700K .......... .......... .......... .......... .......... 35% 17.4M 6s\n  4750K .......... .......... .......... .......... .......... 35% 14.5M 6s\n  4800K .......... .......... .......... .......... .......... 36% 7.56M 6s\n  4850K .......... .......... .......... .......... .......... 36% 15.4M 6s\n  4900K .......... .......... .......... .......... .......... 36% 15.7M 6s\n  4950K .......... .......... .......... .......... .......... 37% 12.7M 6s\n  5000K .......... .......... .......... .......... .......... 37% 1.46M 6s\n  5050K .......... .......... .......... .......... .......... 38% 4.46M 6s\n  5100K .......... .......... .......... .......... .......... 38% 10.5M 5s\n  5150K .......... .......... .......... .......... .......... 38% 8.95M 5s\n  5200K .......... .......... .......... .......... .......... 39% 6.38M 5s\n  5250K .......... .......... .......... .......... .......... 39% 6.58M 5s\n  5300K .......... .......... .......... .......... .......... 39% 8.09M 5s\n  5350K .......... .......... .......... .......... .......... 40% 4.29M 5s\n  5400K .......... .......... .......... .......... .......... 40% 9.87M 5s\n  5450K .......... .......... .......... .......... .......... 41% 9.65M 5s\n  5500K .......... .......... .......... .......... .......... 41% 5.93M 5s\n  5550K .......... .......... .......... .......... .......... 41% 3.13M 5s\n  5600K .......... .......... .......... .......... .......... 42% 6.96M 5s\n  5650K .......... .......... .......... .......... .......... 42% 2.76M 5s\n  5700K .......... .......... .......... .......... .......... 42% 9.14M 5s\n  5750K .......... .......... .......... .......... .......... 43% 3.92M 5s\n  5800K .......... .......... .......... .......... .......... 43% 3.10M 5s\n  5850K .......... .......... .......... .......... .......... 44% 3.65M 5s\n  5900K .......... .......... .......... .......... .......... 44% 3.42M 4s\n  5950K .......... .......... .......... .......... .......... 44% 2.61M 4s\n  6000K .......... .......... .......... .......... .......... 45% 2.40M 4s\n  6050K .......... .......... .......... .......... .......... 45% 2.73M 4s\n  6100K .......... .......... .......... .......... .......... 45% 2.75M 4s\n  6150K .......... .......... .......... .......... .......... 46% 5.81M 4s\n  6200K .......... .......... .......... .......... .......... 46% 3.77M 4s\n  6250K .......... .......... .......... .......... .......... 47% 4.96M 4s\n  6300K .......... .......... .......... .......... .......... 47% 4.15M 4s\n  6350K .......... .......... .......... .......... .......... 47% 4.91M 4s\n  6400K .......... .......... .......... .......... .......... 48% 3.66M 4s\n  6450K .......... .......... .......... .......... .......... 48% 5.17M 4s\n  6500K .......... .......... .......... .......... .......... 48% 3.87M 4s\n  6550K .......... .......... .......... .......... .......... 49% 3.92M 4s\n  6600K .......... .......... .......... .......... .......... 49% 4.02M 4s\n  6650K .......... .......... .......... .......... .......... 50% 2.08M 4s\n  6700K .......... .......... .......... .......... .......... 50% 5.21M 4s\n  6750K .......... .......... .......... .......... .......... 50% 3.49M 4s\n  6800K .......... .......... .......... .......... .......... 51% 3.67M 4s\n  6850K .......... .......... .......... .......... .......... 51% 5.12M 4s\n  6900K .......... .......... .......... .......... .......... 51% 4.77M 4s\n  6950K .......... .......... .......... .......... .......... 52% 5.08M 4s\n  7000K .......... .......... .......... .......... .......... 52% 4.33M 3s\n  7050K .......... .......... .......... .......... .......... 53% 1.95M 3s\n  7100K .......... .......... .......... .......... .......... 53% 3.38M 3s\n  7150K .......... .......... .......... .......... .......... 53% 4.06M 3s\n  7200K .......... .......... .......... .......... .......... 54% 4.03M 3s\n  7250K .......... .......... .......... .......... .......... 54% 6.08M 3s\n  7300K .......... .......... .......... .......... .......... 54% 5.23M 3s\n  7350K .......... .......... .......... .......... .......... 55% 5.71M 3s\n  7400K .......... .......... .......... .......... .......... 55% 4.66M 3s\n  7450K .......... .......... .......... .......... .......... 55% 5.84M 3s\n  7500K .......... .......... .......... .......... .......... 56% 4.58M 3s\n  7550K .......... .......... .......... .......... .......... 56% 5.05M 3s\n  7600K .......... .......... .......... .......... .......... 57% 4.48M 3s\n  7650K .......... .......... .......... .......... .......... 57% 5.86M 3s\n  7700K .......... .......... .......... .......... .......... 57% 4.41M 3s\n  7750K .......... .......... .......... .......... .......... 58% 5.98M 3s\n  7800K .......... .......... .......... .......... .......... 58% 9.48M 3s\n  7850K .......... .......... .......... .......... .......... 58% 4.73M 3s\n  7900K .......... .......... .......... .......... .......... 59% 7.25M 3s\n  7950K .......... .......... .......... .......... .......... 59% 8.44M 3s\n  8000K .......... .......... .......... .......... .......... 60% 5.26M 3s\n  8050K .......... .......... .......... .......... .......... 60% 6.61M 3s\n  8100K .......... .......... .......... .......... .......... 60% 7.99M 3s\n  8150K .......... .......... .......... .......... .......... 61% 6.67M 3s\n  8200K .......... .......... .......... .......... .......... 61% 4.85M 3s\n  8250K .......... .......... .......... .......... .......... 61% 5.66M 3s\n  8300K .......... .......... .......... .......... .......... 62% 7.03M 2s\n  8350K .......... .......... .......... .......... .......... 62% 15.5M 2s\n  8400K .......... .......... .......... .......... .......... 63% 3.60M 2s\n  8450K .......... .......... .......... .......... .......... 63% 19.1M 2s\n  8500K .......... .......... .......... .......... .......... 63% 8.59M 2s\n  8550K .......... .......... .......... .......... .......... 64% 8.12M 2s\n  8600K .......... .......... .......... .......... .......... 64% 4.72M 2s\n  8650K .......... .......... .......... .......... .......... 64% 12.4M 2s\n  8700K .......... .......... .......... .......... .......... 65% 5.62M 2s\n  8750K .......... .......... .......... .......... .......... 65% 8.12M 2s\n  8800K .......... .......... .......... .......... .......... 66% 5.00M 2s\n  8850K .......... .......... .......... .......... .......... 66% 7.10M 2s\n  8900K .......... .......... .......... .......... .......... 66% 5.35M 2s\n  8950K .......... .......... .......... .......... .......... 67% 7.77M 2s\n  9000K .......... .......... .......... .......... .......... 67% 7.15M 2s\n  9050K .......... .......... .......... .......... .......... 67% 7.35M 2s\n  9100K .......... .......... .......... .......... .......... 68% 6.23M 2s\n  9150K .......... .......... .......... .......... .......... 68% 9.73M 2s\n  9200K .......... .......... .......... .......... .......... 69% 6.70M 2s\n  9250K .......... .......... .......... .......... .......... 69%  629K 2s\n  9300K .......... .......... .......... .......... .......... 69% 4.58M 2s\n  9350K .......... .......... .......... .......... .......... 70% 4.81M 2s\n  9400K .......... .......... .......... .......... .......... 70% 6.24M 2s\n  9450K .......... .......... .......... .......... .......... 70% 1.74M 2s\n  9500K .......... .......... .......... .......... .......... 71% 4.37M 2s\n  9550K .......... .......... .......... .......... .......... 71% 4.14M 2s\n  9600K .......... .......... .......... .......... .......... 72% 4.29M 2s\n  9650K .......... .......... .......... .......... .......... 72% 2.82M 2s\n  9700K .......... .......... .......... .......... .......... 72% 5.69M 2s\n  9750K .......... .......... .......... .......... .......... 73% 6.20M 2s\n  9800K .......... .......... .......... .......... .......... 73% 5.54M 2s\n  9850K .......... .......... .......... .......... .......... 73% 7.24M 2s\n  9900K .......... .......... .......... .......... .......... 74% 3.64M 2s\n  9950K .......... .......... .......... .......... .......... 74% 8.22M 2s\n 10000K .......... .......... .......... .......... .......... 75% 6.91M 1s\n 10050K .......... .......... .......... .......... .......... 75% 5.79M 1s\n 10100K .......... .......... .......... .......... .......... 75% 3.11M 1s\n 10150K .......... .......... .......... .......... .......... 76% 7.39M 1s\n 10200K .......... .......... .......... .......... .......... 76% 6.98M 1s\n 10250K .......... .......... .......... .......... .......... 76% 4.82M 1s\n 10300K .......... .......... .......... .......... .......... 77% 6.73M 1s\n 10350K .......... .......... .......... .......... .......... 77% 6.14M 1s\n 10400K .......... .......... .......... .......... .......... 78% 4.99M 1s\n 10450K .......... .......... .......... .......... .......... 78% 5.91M 1s\n 10500K .......... .......... .......... .......... .......... 78% 6.73M 1s\n 10550K .......... .......... .......... .......... .......... 79% 6.06M 1s\n 10600K .......... .......... .......... .......... .......... 79% 5.39M 1s\n 10650K .......... .......... .......... .......... .......... 79% 5.56M 1s\n 10700K .......... .......... .......... .......... .......... 80% 7.21M 1s\n 10750K .......... .......... .......... .......... .......... 80% 6.14M 1s\n 10800K .......... .......... .......... .......... .......... 80% 4.09M 1s\n 10850K .......... .......... .......... .......... .......... 81% 6.70M 1s\n 10900K .......... .......... .......... .......... .......... 81% 3.22M 1s\n 10950K .......... .......... .......... .......... .......... 82% 3.17M 1s\n 11000K .......... .......... .......... .......... .......... 82% 4.70M 1s\n 11050K .......... .......... .......... .......... .......... 82% 4.79M 1s\n 11100K .......... .......... .......... .......... .......... 83% 4.62M 1s\n 11150K .......... .......... .......... .......... .......... 83% 7.96M 1s\n 11200K .......... .......... .......... .......... .......... 83% 4.78M 1s\n 11250K .......... .......... .......... .......... .......... 84% 4.07M 1s\n 11300K .......... .......... .......... .......... .......... 84% 14.0M 1s\n 11350K .......... .......... .......... .......... .......... 85% 9.40M 1s\n 11400K .......... .......... .......... .......... .......... 85% 7.82M 1s\n 11450K .......... .......... .......... .......... .......... 85% 6.69M 1s\n 11500K .......... .......... .......... .......... .......... 86% 5.87M 1s\n 11550K .......... .......... .......... .......... .......... 86% 8.11M 1s\n 11600K .......... .......... .......... .......... .......... 86% 6.69M 1s\n 11650K .......... .......... .......... .......... .......... 87% 3.23M 1s\n 11700K .......... .......... .......... .......... .......... 87% 6.31M 1s\n 11750K .......... .......... .......... .......... .......... 88% 7.83M 1s\n 11800K .......... .......... .......... .......... .......... 88% 3.55M 1s\n 11850K .......... .......... .......... .......... .......... 88% 4.01M 1s\n 11900K .......... .......... .......... .......... .......... 89% 4.82M 1s\n 11950K .......... .......... .......... .......... .......... 89% 3.92M 1s\n 12000K .......... .......... .......... .......... .......... 89% 4.87M 1s\n 12050K .......... .......... .......... .......... .......... 90% 6.47M 1s\n 12100K .......... .......... .......... .......... .......... 90% 5.12M 0s\n 12150K .......... .......... .......... .......... .......... 91% 6.39M 0s\n 12200K .......... .......... .......... .......... .......... 91% 5.56M 0s\n 12250K .......... .......... .......... .......... .......... 91% 7.10M 0s\n 12300K .......... .......... .......... .......... .......... 92% 5.25M 0s\n 12350K .......... .......... .......... .......... .......... 92% 5.88M 0s\n 12400K .......... .......... .......... .......... .......... 92% 3.05M 0s\n 12450K .......... .......... .......... .......... .......... 93% 4.17M 0s\n 12500K .......... .......... .......... .......... .......... 93% 8.74M 0s\n 12550K .......... .......... .......... .......... .......... 94% 2.79M 0s\n 12600K .......... .......... .......... .......... .......... 94% 4.49M 0s\n 12650K .......... .......... .......... .......... .......... 94% 3.70M 0s\n 12700K .......... .......... .......... .......... .......... 95% 2.16M 0s\n 12750K .......... .......... .......... .......... .......... 95% 2.36M 0s\n 12800K .......... .......... .......... .......... .......... 95% 1.77M 0s\n 12850K .......... .......... .......... .......... .......... 96% 2.82M 0s\n 12900K .......... .......... .......... .......... .......... 96% 1.38M 0s\n 12950K .......... .......... .......... .......... .......... 97% 1.72M 0s\n 13000K .......... .......... .......... .......... .......... 97% 2.31M 0s\n 13050K .......... .......... .......... .......... .......... 97% 2.57M 0s\n 13100K .......... .......... .......... .......... .......... 98% 3.23M 0s\n 13150K .......... .......... .......... .......... .......... 98% 2.31M 0s\n 13200K .......... .......... .......... .......... .......... 98% 1.60M 0s\n 13250K .......... .......... .......... .......... .......... 99% 2.62M 0s\n 13300K .......... .......... .......... .......... .......... 99% 3.29M 0s\n 13350K .......... .......... .......... .......... .....     100% 4.81M\u003d5.3s\n\n2018-04-18 17:06:24 (2.48 MB/s) - ‘imdb_reviews_preprocessed.parquet.zip’ saved [13717398/13717398]\n\nArchive:  imdb_reviews_preprocessed.parquet.zip\n   creating: imdb_reviews_preprocessed.parquet/\n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00000-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00001-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00002-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00003-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00004-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00005-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00006-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00007-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00008-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/.part-r-00009-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet.crc  \n  inflating: imdb_reviews_preprocessed.parquet/_common_metadata  \n  inflating: imdb_reviews_preprocessed.parquet/_metadata  \n extracting: imdb_reviews_preprocessed.parquet/_SUCCESS  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00000-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00001-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00002-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00003-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00004-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00005-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00006-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00007-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00008-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n  inflating: imdb_reviews_preprocessed.parquet/part-r-00009-d6d1fcf6-a8d0-4996-aec5-ca0f47be35f2.gz.parquet  \n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524071096494_-226053425",
+      "id": "20180418-170456_1806086840",
+      "dateCreated": "Apr 18, 2018 5:04:56 PM",
+      "dateStarted": "Apr 18, 2018 5:06:01 PM",
+      "dateFinished": "Apr 18, 2018 5:06:24 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\ncd data \u0026\u0026 wget https://github.com/daniel-acuna/python_data_science_intro/blob/master/data/sentiments.parquet.zip?raw\u003dtrue -O sentiments.parquet.zip \u0026\u0026 unzip sentiments.parquet.zip \u0026\u0026 rm sentiments.parquet.zip\n\ncd data \u0026\u0026 wget https://github.com/daniel-acuna/python_data_science_intro/blob/master/data/tweets.parquet.zip?raw\u003dtrue -O tweets.parquet.zip \u0026\u0026 unzip tweets.parquet.zip \u0026\u0026 rm tweets.parquet.zip",
+      "user": "anonymous",
+      "dateUpdated": "Apr 18, 2018 5:09:57 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "--2018-04-18 17:08:29--  https://github.com/daniel-acuna/python_data_science_intro/blob/master/data/tweets.parquet.zip?raw\u003dtrue\nResolving github.com (github.com)... 192.30.253.113, 192.30.253.112\nConnecting to github.com (github.com)|192.30.253.113|:443... connected.\nHTTP request sent, awaiting response... 302 Found\nLocation: https://github.com/daniel-acuna/python_data_science_intro/raw/master/data/tweets.parquet.zip [following]\n--2018-04-18 17:08:30--  https://github.com/daniel-acuna/python_data_science_intro/raw/master/data/tweets.parquet.zip\nReusing existing connection to github.com:443.\nHTTP request sent, awaiting response... 302 Found\nLocation: https://raw.githubusercontent.com/daniel-acuna/python_data_science_intro/master/data/tweets.parquet.zip [following]\n--2018-04-18 17:08:30--  https://raw.githubusercontent.com/daniel-acuna/python_data_science_intro/master/data/tweets.parquet.zip\nResolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.92.133\nConnecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.92.133|:443... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 136483 (133K) [application/zip]\nSaving to: ‘tweets.parquet.zip’\n\n     0K .......... .......... .......... .......... .......... 37% 2.11M 0s\n    50K .......... .......... .......... .......... .......... 75% 4.09M 0s\n   100K .......... .......... .......... ...                  100% 5.98M\u003d0.04s\n\n2018-04-18 17:08:30 (3.22 MB/s) - ‘tweets.parquet.zip’ saved [136483/136483]\n\nArchive:  tweets.parquet.zip\n   creating: tweets.parquet/\n  inflating: tweets.parquet/.part-r-00000-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00001-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00002-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00003-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00004-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00005-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00006-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00007-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00008-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00009-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00010-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00011-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00012-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00013-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00014-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/.part-r-00015-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet.crc  \n  inflating: tweets.parquet/_common_metadata  \n  inflating: tweets.parquet/_metadata  \n extracting: tweets.parquet/_SUCCESS  \n  inflating: tweets.parquet/part-r-00000-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00001-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00002-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00003-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00004-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00005-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00006-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00007-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00008-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00009-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00010-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00011-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00012-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00013-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00014-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n  inflating: tweets.parquet/part-r-00015-308756a7-7af0-4b11-9119-6ce7cdecce7e.gz.parquet  \n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524071105166_732371409",
+      "id": "20180418-170505_1990556921",
+      "dateCreated": "Apr 18, 2018 5:05:05 PM",
+      "dateStarted": "Apr 18, 2018 5:08:29 PM",
+      "dateFinished": "Apr 18, 2018 5:08:30 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n\nimport pyspark.sql.functions as fn\n\n\n#load sentiment analysis sample\nsentiment_df \u003d spark.read.parquet(\u0027data/sentiments.parquet\u0027)\nsentiment_df.cache()\nsentiment_df.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "Apr 18, 2018 5:23:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- word: string (nullable \u003d true)\n |-- sentiment: long (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524071177608_-1707093148",
+      "id": "20180418-170617_522711475",
+      "dateCreated": "Apr 18, 2018 5:06:17 PM",
+      "dateStarted": "Apr 18, 2018 5:23:13 PM",
+      "dateFinished": "Apr 18, 2018 5:23:13 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n#sample of positive words\nsentiment_df.where(sentiment_df[\u0027sentiment\u0027] \u003e 0).show(10)\n\n#sample of negative words\nsentiment_df.where(sentiment_df[\u0027sentiment\u0027] \u003c 0).show(10)",
+      "user": "anonymous",
+      "dateUpdated": "Apr 18, 2018 5:17:03 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------+---------+\n|         word|sentiment|\n+-------------+---------+\n|   gratefully|        1|\n|gratification|        1|\n|    gratified|        1|\n|    gratifies|        1|\n|      gratify|        1|\n|   gratifying|        1|\n| gratifyingly|        1|\n|    gratitude|        1|\n|        great|        1|\n|     greatest|        1|\n+-------------+---------+\nonly showing top 10 rows\n\n+-----------+---------+\n|       word|sentiment|\n+-----------+---------+\n|    2-faced|       -1|\n|    2-faces|       -1|\n|   abnormal|       -1|\n|    abolish|       -1|\n| abominable|       -1|\n| abominably|       -1|\n|  abominate|       -1|\n|abomination|       -1|\n|      abort|       -1|\n|    aborted|       -1|\n+-----------+---------+\nonly showing top 10 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524071325693_-760379347",
+      "id": "20180418-170845_646726084",
+      "dateCreated": "Apr 18, 2018 5:08:45 PM",
+      "dateStarted": "Apr 18, 2018 5:17:03 PM",
+      "dateFinished": "Apr 18, 2018 5:17:03 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n#group by sentiment\nsentiment_df.groupBy(\u0027sentiment\u0027).agg(fn.count(\u0027*\u0027)).show()",
+      "user": "anonymous",
+      "dateUpdated": "Apr 18, 2018 5:23:16 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+--------+\n|sentiment|count(1)|\n+---------+--------+\n|        1|    2006|\n|       -1|    4783|\n+---------+--------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524071669997_2067416679",
+      "id": "20180418-171429_1911471472",
+      "dateCreated": "Apr 18, 2018 5:14:29 PM",
+      "dateStarted": "Apr 18, 2018 5:23:16 PM",
+      "dateFinished": "Apr 18, 2018 5:23:18 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n#apply our sentiment analysis on dataset of imdb\n\nfrom pyspark.ml.feature import RegexTokenizer\nimdb_df \u003d spark.read.parquet(\u0027data/imdb_reviews_preprocessed.parquet\u0027)\n#imdb_df.head()\ntokenizer \u003d RegexTokenizer(gaps\u003dFalse, pattern\u003d\u0027\\\\p{L}+\u0027, inputCol\u003d\u0027review\u0027, outputCol\u003d\u0027words\u0027)\ntokenizer_df \u003d tokenizer.transform(imdb_df)\ntokenizer_df.show(5)",
+      "user": "anonymous",
+      "dateUpdated": "Apr 19, 2018 1:22:56 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+--------------------+-----+--------------------+\n|       id|              review|score|               words|\n+---------+--------------------+-----+--------------------+\n|pos_10006|In this \"critical...|  1.0|[in, this, critic...|\n|pos_10013|Like one of the p...|  1.0|[like, one, of, t...|\n|pos_10022|Aro Tolbukhin bur...|  1.0|[aro, tolbukhin, ...|\n|pos_10033|The movie Titanic...|  1.0|[the, movie, tita...|\n| pos_1003|Another Aussie ma...|  1.0|[another, aussie,...|\n+---------+--------------------+-----+--------------------+\nonly showing top 5 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524071889644_561248973",
+      "id": "20180418-171809_1763841186",
+      "dateCreated": "Apr 18, 2018 5:18:09 PM",
+      "dateStarted": "Apr 19, 2018 1:22:56 PM",
+      "dateFinished": "Apr 19, 2018 1:22:57 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n#now we want to JOIN our tokenized data with the words from Twitter sentiment analysis. To do that we need to \u0027pivot\u0027 our words column, this means for every word inside thos column we will transpose all columns.\ntokenizer_df.select(\u0027id\u0027,fn.explode(\u0027words\u0027).alias(\u0027word\u0027)).show(10)",
+      "user": "anonymous",
+      "dateUpdated": "Apr 19, 2018 1:52:47 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+-------------+\n|       id|         word|\n+---------+-------------+\n|pos_10006|           in|\n|pos_10006|         this|\n|pos_10006|   critically|\n|pos_10006|    acclaimed|\n|pos_10006|psychological|\n|pos_10006|     thriller|\n|pos_10006|        based|\n|pos_10006|           on|\n|pos_10006|         true|\n|pos_10006|       events|\n+---------+-------------+\nonly showing top 10 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524072957289_1191612167",
+      "id": "20180418-173557_1978887410",
+      "dateCreated": "Apr 18, 2018 5:35:57 PM",
+      "dateStarted": "Apr 19, 2018 1:50:33 PM",
+      "dateFinished": "Apr 19, 2018 1:50:34 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\nwords_imdb_with_sentiment \u003d tokenizer_df.select(\u0027id\u0027,fn.explode(\u0027words\u0027).alias(\u0027word\u0027)).join(sentiment_df, \u0027word\u0027)\nwords_imdb_with_sentiment.show(5)",
+      "user": "anonymous",
+      "dateUpdated": "Apr 19, 2018 1:59:45 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----------+---------+---------+\n|      word|       id|sentiment|\n+----------+---------+---------+\n| acclaimed|pos_10006|        1|\n|celebrated|pos_10006|        1|\n| troubling|pos_10006|       -1|\n|   mystery|pos_10006|       -1|\n|    deadly|pos_10006|       -1|\n+----------+---------+---------+\nonly showing top 5 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524145650815_1766401923",
+      "id": "20180419-134730_486351240",
+      "dateCreated": "Apr 19, 2018 1:47:30 PM",
+      "dateStarted": "Apr 19, 2018 1:59:45 PM",
+      "dateFinished": "Apr 19, 2018 1:59:45 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n#now we have de sentiments for every word. With this information, without any ML algorithm, we can compute if an review is positive or negative. To do this we will use the AVERAGE.\n#AVERAGE is a value obtained by dividing the sum of several quantities by their number.\n\nsentiment_analisissentiment_analisis \u003d words_imdb_with_sentiment.groupBy(fn.column(\u0027id\u0027)).agg(fn.avg(\u0027sentiment\u0027).alias(\u0027average_sentiment\u0027)).withColumn(\u0027sentiment\u0027, fn.when(fn.col(\u0027average_sentiment\u0027) \u003e 0, 1).otherwise(0))\nsentiment_analisis.show(10)",
+      "user": "anonymous",
+      "dateUpdated": "Apr 19, 2018 2:51:33 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+--------------------+---------+\n|       id|   average_sentiment|sentiment|\n+---------+--------------------+---------+\n|pos_10149| 0.42857142857142855|        1|\n|pos_10377|  0.5384615384615384|        1|\n| pos_1299| 0.09090909090909091|        1|\n| pos_2228|-0.14285714285714285|        0|\n| pos_5052|  0.7777777777777778|        1|\n| pos_5225|                0.28|        1|\n| pos_7764|                 0.2|        1|\n| pos_7997|  0.6363636363636364|        1|\n| pos_9586|  0.5555555555555556|        1|\n| pos_9992| 0.06666666666666667|        1|\n+---------+--------------------+---------+\nonly showing top 10 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524146161309_2010095761",
+      "id": "20180419-135601_2094148676",
+      "dateCreated": "Apr 19, 2018 1:56:01 PM",
+      "dateStarted": "Apr 19, 2018 2:36:33 PM",
+      "dateFinished": "Apr 19, 2018 2:36:38 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n#lets check an example {pos_1299: 0.09}\nimdb_df.select(\u0027review\u0027).where(fn.col(\u0027id\u0027)\u003d\u003d\u0027pos_1299\u0027).show(truncate\u003dFalse)",
+      "user": "anonymous",
+      "dateUpdated": "Apr 19, 2018 2:27:26 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n|review                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |\n+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n|I caught a bit of this concert on public television and knew I had to have it. The boys give everyone at the Royal Albert an excellent, often thrilling performance complete in every way. Pure, too - no synth, no smoke-shrouded lasers and strobes, no grandiose entrance (and an unstoned, serious, and appreciative audience, all of whom left their bottle rockets at home).\u003cbr /\u003e\u003cbr /\u003eIf you\u0027re a Cream fan (or if you\u0027ve only heard of them); if you\u0027re a blues fan; if you\u0027re a rock \u0027n\u0027 roll fan; you will not be disappointed when you view and listen to this DVD. You also will never lose this DVD because you\u0027ll never lend it to anyone. (This DVD justifies selfishness! Tell them to get their own!) It\u0027s too good and too replayable; you\u0027ll want to keep it within easy reach.|\n+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524146546029_-2115028704",
+      "id": "20180419-140226_1717275119",
+      "dateCreated": "Apr 19, 2018 2:02:26 PM",
+      "dateStarted": "Apr 19, 2018 2:27:26 PM",
+      "dateFinished": "Apr 19, 2018 2:27:27 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n#now, let\u0027s compute the accuracy of our \u0027model\u0027.\nprint(\"\\n\\n\\nTokenized imdb schema\")\ntokenizer_df.printSchema()\n\nprint(\"\\n\\n\\nFinal analisis schema\")\nsentiment_analisis.printSchema()\n\nprint(\"\\n\\n\\n(no)model accuracy\")\ntokenizer_df.join(sentiment_analisis, \u0027id\u0027)\\\n    .select(fn.expr(\u0027float(score\u003dsentiment)\u0027).alias(\u0027average\u0027)).select(fn.avg(\u0027average\u0027)).show()",
+      "user": "anonymous",
+      "dateUpdated": "Apr 19, 2018 3:05:12 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\n\nTokenized imdb schema\nroot\n |-- id: string (nullable \u003d true)\n |-- review: string (nullable \u003d true)\n |-- score: double (nullable \u003d true)\n |-- words: array (nullable \u003d true)\n |    |-- element: string (containsNull \u003d true)\n\n\n\n\nFinal analisis schema\nroot\n |-- id: string (nullable \u003d true)\n |-- average_sentiment: double (nullable \u003d true)\n |-- sentiment: integer (nullable \u003d false)\n\n\n\n\\n(no)model accuracy\n+-----------------+\n|     avg(average)|\n+-----------------+\n|0.732231471106131|\n+-----------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1524147893704_1777025463",
+      "id": "20180419-142453_1654056099",
+      "dateCreated": "Apr 19, 2018 2:24:53 PM",
+      "dateStarted": "Apr 19, 2018 3:04:56 PM",
+      "dateFinished": "Apr 19, 2018 3:05:01 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark.pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "Apr 19, 2018 2:36:48 PM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1524148608052_-659012460",
+      "id": "20180419-143648_1695053243",
+      "dateCreated": "Apr 19, 2018 2:36:48 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "spark_nlp_pipeline",
+  "id": "2DAYB11DQ",
+  "angularObjects": {
+    "2DCKABWJ9:shared_process": [],
+    "2DC166ZPN:shared_process": [],
+    "2DBQCQGN9:shared_process": [],
+    "2DE3K1HGH:shared_process": [],
+    "2DCMPC77M:shared_process": [],
+    "2DC8AYSSK:shared_process": [],
+    "2DCK61477:shared_process": [],
+    "2DBSGN9XQ:shared_process": [],
+    "2DBUXVGJN:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
